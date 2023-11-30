@@ -5,20 +5,20 @@
 using namespace std;
 
 int main() {
-    setlocale(LC_ALL, "ru");
+    
     double x,y;
     char first;
-    cout << "Введите ваше имя";
+    cout << "Enter your name";
     cin >> first;
-    cout << "Здравствуйте, "<< first <<endl;
-    cout << "Введите координаты:"<<endl;
+    cout << "Hello, "<< first <<endl;
+    cout << "Enter your coordinates:"<<endl;
     cin >> x;
     cin >> y;
     if(((y < 0.3) && (x*x + y * y > 1))||((y < -0.3) && (x*x + y * y < -1)))
-    cout<<"Точка принадлежит области";
+    cout<<"The point lies within the area";
     else (((x*x + y * y < 1)||((y > 0.3) && (x*x + y * y > 1)))||((x*x + y * y < 1) || ((y < -0.3) && (x*x + y * y < -1))))
-    cout<<"Точка не принадлежит области";
+    cout<<"The point lies outside the area";
     else
-    cout << "Точка лежит на границе области."
-    cout << "Надеюсь мы смогли вам помочь.";
+    cout << "The pont lies on the edge of the area."
+    cout << "I hope that we helped you.";
 }
